@@ -1,15 +1,16 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {
       colors: {
         'brand-green': '#00875F',
         'brand-green-light': '#00B37E',
-        
+
         'brand-gray-900': '#121214', // background
         'brand-gray-800': '#202024', // cards
         'brand-gray-700': '#323238', // divider
@@ -21,9 +22,9 @@ module.exports = {
         'brand-red-danger': '#F75A68',
       },
       fontFamily: {
-        'sans': ['Roboto'],
+        sans: ['Roboto'],
       },
     },
   },
   plugins: [],
-}
+};

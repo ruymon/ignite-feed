@@ -1,7 +1,15 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import { Splash } from './pages/Splash';
+
 const App = () => (
-  <h1 className="text-3xl font-bold underline font-sans">
-    Ignite Feed
-  </h1>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Splash />} />
+      {/* <Route path="/login" element={<Login />} /> */}
+      {/* <Route path="/feed" element={<Feed />} /> */}
+    </Routes>
+  </BrowserRouter>
 );
 
 export default App;

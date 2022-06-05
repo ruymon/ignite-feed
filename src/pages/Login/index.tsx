@@ -15,7 +15,7 @@ export const Login = () => (
 
       <div className={styles.authButtonContainer}>
         <SocialAuthButton provider="google" />
-        <SocialAuthButton provider="facebook" />
+        <SocialAuthButton provider="twitter" />
         <SocialAuthButton provider="github" />
       </div>
     </main>

@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-export type AuthProviders = 'google' | 'facebook' | 'github';
+export type AuthProviders = 'google' | 'twitter' | 'github';
 
 export interface User {
   id: string;

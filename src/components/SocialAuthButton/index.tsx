@@ -1,22 +1,23 @@
 import { createElement } from 'react';
-import { FaGithub, FaFacebook, FaGoogle } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaGoogle } from 'react-icons/fa';
+import { AuthProviders } from '../../@types/auth';
 import { useAuth } from '../../hooks/useAuth';
 
 import styles from './styles.module.css';
 
 interface SocialAuthButtonProps {
-  provider: 'facebook' | 'google' | 'github';
+  provider: AuthProviders;
 }
 
 const SocialAuthButtonIconVariants = {
   google: FaGoogle,
-  facebook: FaFacebook,
+  twitter: FaTwitter,
   github: FaGithub,
 };
 
 const SocialAuthButtonStyleVariants = {
   google: '#EA4335',
-  facebook: '#4267B2',
+  twitter: '#00ACEE',
   github: '#171515',
 };
 

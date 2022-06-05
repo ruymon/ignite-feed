@@ -1,5 +1,5 @@
 import {
-  FacebookAuthProvider,
+  TwitterAuthProvider,
   GithubAuthProvider, GoogleAuthProvider, onAuthStateChanged, signInWithPopup,
   User as FirebaseUser,
 } from 'firebase/auth';
@@ -13,7 +13,7 @@ import { auth } from '../services/firebase';
 
 const AuthProviderVariants = {
   google: GoogleAuthProvider,
-  facebook: FacebookAuthProvider,
+  twitter: TwitterAuthProvider,
   github: GithubAuthProvider,
 };
 
@@ -43,6 +43,8 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
       const result = await signInWithPopup(auth, providerService);
       handleUser(result.user);
     } catch (error) {
+      // TODO Notify user about duplicate acount.
+      console.error(error);
       throw new Error('User not authenticated.');
     }
   };

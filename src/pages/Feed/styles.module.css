@@ -1,5 +1,5 @@
 .container {
-  @apply w-screen h-screen bg-brand-gray-800 flex items-center justify-center;
+  @apply w-screen h-screen bg-brand-gray-900 flex flex-col items-center;
 }
 
 .container h1 {

@@ -1,3 +1,4 @@
+import { Logo } from '../../components/Logo';
 import { SocialAuthButton } from '../../components/SocialAuthButton';
 import styles from './styles.module.css';
 
@@ -6,7 +7,7 @@ export const Login = () => (
     <aside className={styles.aside} />
 
     <main className={styles.main}>
-      <img src="./assets/logo.svg" alt="Ignite Feed Logo" className="w-60" />
+      <Logo />
 
       <div className={styles.headerContainer}>
         <h1>Escolha uma opção para entrar</h1>

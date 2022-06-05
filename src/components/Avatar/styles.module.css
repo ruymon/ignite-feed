@@ -1,0 +1,7 @@
+.container {
+  @apply w-16 h-16 bg-brand-gray-800 rounded-md border-[3px] border-brand-green-light p-1 flex items-center justify-center;
+}
+
+.container img {
+  @apply rounded-sm;
+}

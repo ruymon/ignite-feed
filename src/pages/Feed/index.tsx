@@ -1,4 +1,5 @@
 import { Header } from '../../components/Header';
+import { ProfileCard } from '../../components/ProfileCard';
 import { useAuth } from '../../hooks/useAuth';
 import styles from './styles.module.css';
 
@@ -8,7 +9,7 @@ export const Feed = () => {
   return (
     <div className={styles.container}>
       <Header />
-      <h1>{user.name}</h1>
+      <ProfileCard />
     </div>
   );
 };

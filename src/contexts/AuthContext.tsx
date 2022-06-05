@@ -25,7 +25,9 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 
   const handleUser = (firebaseUser: FirebaseUser) => {
     if (!firebaseUser) return;
-    const { uid, displayName, photoURL } = firebaseUser;
+    const {
+      uid, displayName, photoURL,
+    } = firebaseUser;
 
     if (!displayName || !photoURL) throw new Error('Missing user information');
 

@@ -1,0 +1,31 @@
+.container {
+  @apply bg-brand-gray-800 rounded-lg w-64 h-fit flex flex-col gap-8 justify-between pb-8;
+}
+
+.header {
+  @apply bg-[url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80')] h-20 flex items-end justify-center rounded-t-lg bg-cover bg-center;
+}
+
+.header div {
+  @apply -mb-[12%];
+}
+
+.profile {
+  @apply flex flex-col items-center justify-center gap-1 mt-5;
+}
+
+.profile span:first-child {
+  @apply text-base font-bold text-white leading-relaxed;
+}
+
+.profile p {
+  @apply text-sm font-normal text-brand-gray-300;
+}
+
+.divider {
+  @apply border-brand-gray-700 w-full;
+}
+
+.footer {
+  @apply flex flex-col gap-6 items-center;
+}

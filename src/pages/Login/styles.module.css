@@ -1,0 +1,26 @@
+.container {
+  @apply w-screen h-screen bg-brand-gray-800 flex;
+}
+
+.aside {
+  @apply hidden lg:flex md:flex-1 h-full bg-login-ilustration bg-no-repeat bg-cover;
+}
+
+.main {
+  @apply lg:w-5/12 w-full flex flex-col p-12 justify-between;
+}
+
+.headerContainer {
+  @apply flex flex-col gap-2 text-white;
+}
+
+.headerContainer h1 {
+  @apply text-5xl font-bold xl:w-[80%] leading-normal;	
+}
+
+.headerContainer p {
+  @apply text-brand-gray-300 text-base leading-relaxed w-[80%];
+}
+.authButtonContainer {
+  @apply flex flex-col gap-4;
+}

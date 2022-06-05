@@ -1,0 +1,11 @@
+.container {
+  @apply p-4 rounded-lg text-white flex items-center justify-center gap-2 hover:opacity-80;
+}
+
+.container svg {
+  @apply w-6 h-6;
+}
+
+.container span {
+  @apply text-base font-bold tracking-wide;
+}

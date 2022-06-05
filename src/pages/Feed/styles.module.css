@@ -1,0 +1,7 @@
+.container {
+  @apply w-screen h-screen bg-brand-gray-800 flex items-center justify-center;
+}
+
+.container h1 {
+  @apply text-3xl text-white font-bold;
+}

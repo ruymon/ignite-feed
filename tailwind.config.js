@@ -20,10 +20,6 @@ module.exports = {
         'brand-gray-100': '#E1E1E6',
 
         'brand-red-danger': '#F75A68',
-
-        'brand-google': '#EA4335',
-        'brand-facebook': '#4267B2',
-        'brand-github': '#171515',
       },
       fontFamily: {
         sans: ['Roboto'],

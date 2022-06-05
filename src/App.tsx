@@ -1,16 +1,24 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { Splash } from './pages/Splash';
 import { Login } from './pages/Login';
+import { AuthProvider } from './contexts/AuthContext';
+import { Feed } from './pages/Feed';
+import { AuthLayout } from './layouts/AuthLayout';
 
 const App = () => (
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Splash />} />
-      <Route path="/login" element={<Login />} />
-      {/* <Route path="/feed" element={<Feed />} /> */}
-    </Routes>
-  </BrowserRouter>
+  <AuthProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<AuthLayout />}>
+          <Route path="/" element={<Login />} />
+        </Route>
+
+        <Route element={<AuthLayout isProtected />}>
+          <Route path="/feed" element={<Feed />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  </AuthProvider>
 );
 
 export default App;

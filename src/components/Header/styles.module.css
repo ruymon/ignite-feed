@@ -1,3 +1,7 @@
 .container {
-  @apply w-screen p-5  flex items-center justify-center bg-brand-gray-800;
+  @apply w-screen p-5 flex items-center justify-center bg-brand-gray-800 sticky top-0;
+}
+
+.container img {
+  @apply w-40;
 }

@@ -1,0 +1,31 @@
+.container {
+  @apply bg-brand-gray-800 rounded-md p-10 flex flex-col gap-6;
+}
+
+.header {
+  @apply flex items-center justify-between;
+}
+
+.profile {
+  @apply flex items-center justify-center gap-4;
+}
+
+.profileInfo h1 {
+  @apply text-base font-bold text-brand-gray-100;
+}
+
+.profileInfo span {
+  @apply text-sm font-normal text-brand-gray-300;
+}
+
+.publishedAt {
+  @apply text-sm font-normal text-brand-gray-300;
+}
+
+.content {
+  @apply text-base font-normal text-brand-gray-200;
+}
+
+.content a, span {
+  @apply text-brand-green-light font-bold;
+}

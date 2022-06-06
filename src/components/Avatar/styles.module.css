@@ -3,5 +3,5 @@
 }
 
 .container img {
-  @apply rounded-sm;
+  @apply rounded-sm w-full h-full object-cover;
 }

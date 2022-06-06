@@ -1,3 +1,0 @@
-.container {
-  @apply p-2 px-4 w-fit flex items-center justify-center gap-2 text-brand-green-light text-base font-bold border-2 border-brand-green-light rounded-md hover:text-white hover:bg-brand-green hover:border-brand-green transition;
-}

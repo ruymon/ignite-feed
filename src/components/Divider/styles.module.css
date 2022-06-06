@@ -1,0 +1,3 @@
+.divider {
+  @apply border-brand-gray-700 w-full;
+}

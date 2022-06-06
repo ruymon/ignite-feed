@@ -1,15 +1,27 @@
 import { Header } from '../../components/Header';
 import { ProfileCard } from '../../components/ProfileCard';
-import { useAuth } from '../../hooks/useAuth';
+import { PostCard } from '../../components/PostCard';
 import styles from './styles.module.css';
 
-export const Feed = () => {
-  const { user } = useAuth();
+export const Feed = () => (
+  <div className={styles.container}>
+    <Header />
 
-  return (
-    <div className={styles.container}>
-      <Header />
+    <div className={styles.wrapper}>
       <ProfileCard />
+
+      <div className={styles.postContainer}>
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+      </div>
     </div>
-  );
-};
+  </div>
+);

@@ -1,5 +1,6 @@
 import { useAuth } from '../../hooks/useAuth';
 import { Avatar } from '../Avatar';
+import { Divider } from '../Divider';
 import { EditProfileButton } from '../EditProfileButton';
 
 import styles from './styles.module.css';
@@ -14,12 +15,12 @@ export const ProfileCard = () => {
       </div>
 
       <div className={styles.profile}>
-        <span>{user.name}</span>
+        <h1>{user.name}</h1>
         <p>UI Designer</p>
       </div>
 
       <div className={styles.footer}>
-        <hr className={styles.divider} />
+        <Divider />
         <EditProfileButton />
       </div>
     </div>

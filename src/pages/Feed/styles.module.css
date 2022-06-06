@@ -1,7 +1,11 @@
 .container {
-  @apply w-screen h-screen bg-brand-gray-900 flex flex-col items-center;
+  @apply w-screen min-h-screen bg-brand-gray-900 flex flex-col items-center;
 }
 
-.container h1 {
-  @apply text-3xl text-white font-bold;
+.wrapper {
+  @apply max-w-6xl w-full h-fit mt-10 flex justify-between gap-8 px-8;
+}
+
+.postContainer {
+  @apply flex flex-col gap-8 w-full;
 }
